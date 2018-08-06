@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 .navbar {
-    background: #37123C;
+    background: $color-dark-purple;
 }
 .navbar div {
     display: none;
@@ -19,13 +19,13 @@ body {
     text-align: center;
     padding: 1em;
     text-decoration: none;
-    background: #8C5383;
+    background: $color-light-purple;
     color: white;
     margin-left: 20px;
 }
 .navbar .link:hover,
 .navbar .link:active {
-    color: #8C5383;
+    color: $color-light-purple;
     background: white;
 }
 .navbar .brand {
@@ -67,8 +67,8 @@ body {
 }
 @media (max-width: 48em) {
     .navbar.active .toggle {
-        background: #223047;
-        color: white;
+        background: $color-dark-purple;
+        color: $color-light-purple;
     }
     .navbar .brand {
         text-align: left;
