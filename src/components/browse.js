@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./navbar";
-import Sidebar from "./sidebar";
 import ApronItem from "./apron_item";
-import Filters from "./filters";
+
 
 class Browse extends Component {
   render() {
@@ -13,7 +12,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "infant"
       },
       {
         _id: 1,
@@ -21,7 +22,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "infant"
       },
       {
         _id: 2,
@@ -29,7 +32,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "infant"
       },
       {
         _id: 3,
@@ -37,7 +42,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "toddler"
       },
       {
         _id: 4,
@@ -45,7 +52,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "toddler"
       },
       {
         _id: 5,
@@ -53,7 +62,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "toddler"
       },
       {
         _id: 6,
@@ -61,7 +72,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "child"
       },
       {
         _id: 7,
@@ -69,7 +82,9 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "child"
       },
       {
         _id: 8,
@@ -77,15 +92,15 @@ class Browse extends Component {
         pic:
           "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
         description: "Description goes here",
-        price: "$$"
+        price: "$$",
+        active: false,
+        apron_type: "child"
       },
 
     ];
     return (
       <div>
         <Navbar />
-        <Filters/>
-        <Sidebar/>
         <div className="apron_list">
           {this.aprons.map(apron => {
             return <ApronItem key={apron._id} {...apron} />;

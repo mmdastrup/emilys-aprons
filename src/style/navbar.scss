@@ -1,3 +1,4 @@
+@import "dropdown";
 html {
     font-family: 'Oxygen', sans-serif;
 }
@@ -10,18 +11,22 @@ body {
 .navbar div {
     display: none;
 }
+.navbar .left #about {
+    margin-left: 425px;
+}
 .navbar .toggle,
 .navbar .brand {
     display: inline-block;
+    font-size: 26px;
 }
 .navbar .link {
     display: block;
     text-align: center;
-    padding: 1em;
+    padding: 0.8em;
     text-decoration: none;
     background: $color-light-purple;
     color: white;
-    margin-left: 20px;
+    font-size: 22px;
 }
 .navbar .link:hover,
 .navbar .link:active {
@@ -31,7 +36,7 @@ body {
 .navbar .brand {
     width: 10em;
     text-align: center;
-    padding: 1em;
+    padding: 0.6em;
     color: white;
 }
 .navbar a {
@@ -41,6 +46,24 @@ body {
     padding: 1em;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 48em) {
     .navbar {
         display: flex;
@@ -77,4 +100,5 @@ body {
         display: block;
     }
 }
+
 

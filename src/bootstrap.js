@@ -9,6 +9,9 @@ import App from './components/app';
 import About from './components/about';
 import Browse from './components/browse';
 import ShoppingCart from './components/shoppingCart';
+import InfantsBrowse from './components/infantsBrowse';
+import ToddlersBrowse from './components/toddlersBrowse';
+import KidsBrowse from './components/kidsBrowse';
 
 import reducers from './reducers';
 
@@ -25,8 +28,12 @@ function main() {
         <Switch>
           <Route exact path="/" component={App} />
           <Route exact path="/browse" component={Browse} />
-          <Route path="/about" component={About} />
-          <Route path="/shoppingCart" component={ShoppingCart} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/shoppingCart" component={ShoppingCart} />
+          <Route exact path="/infantsBrowse" component={InfantsBrowse} />
+          <Route exact path="/toddlersBrowse" component={ToddlersBrowse} />
+          <Route exact path="/kidsBrowse" component={KidsBrowse} />
+
         </Switch>
       </BrowserRouter>
     </Provider>

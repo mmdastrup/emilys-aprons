@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Filters extends Component {
+export default class Apron extends Component {
     render() {
         return (
             <div>
-                <p>these are the filters</p>
+                <p>This is where the individual apron listing will be viewed</p>
             </div>
         );
     }
