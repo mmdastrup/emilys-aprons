@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 import ApronItem from "./apron_item";
+import Filters from "./filters";
 
 class Browse extends Component {
   render() {
@@ -83,6 +84,7 @@ class Browse extends Component {
     return (
       <div>
         <Navbar />
+        <Filters/>
         <Sidebar/>
         <div className="apron_list">
           {this.aprons.map(apron => {

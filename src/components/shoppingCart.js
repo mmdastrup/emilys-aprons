@@ -7,7 +7,7 @@ export default class ShoppingCart extends Component {
         return (
             <div>
                 <Navbar/>
-                <p>This is the shopping cart page</p>
+                
             </div>
         );
     }

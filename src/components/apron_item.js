@@ -4,8 +4,10 @@ export default class ApronItem extends Component {
     constructor(props) {
         super(props) 
     }
-    
+
+
     render() {
+
         return (
             <div className="apron_items">
                 <img src={this.props.pic} className="apron_pic"/>
@@ -16,3 +18,4 @@ export default class ApronItem extends Component {
         );
     }
 }
+
