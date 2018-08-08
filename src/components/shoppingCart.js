@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from './navbar';
 
-export default class ShoppingCart extends Component {
+import ApronItem from './apron_item';
+
+import { connect } from 'react-redux';
+
+class ShoppingCart extends Component {
     constructor(props) {
         super(props)
     }
@@ -10,9 +14,27 @@ export default class ShoppingCart extends Component {
         return (
             <div className="shoppingCart-wrapper">
                 <Navbar/>
-                //render selected apron items here
+                {
+ 
+                    this.props.aprons.map(apron => {
+                        if(apron.active) {
+                            return <ApronItem key={apron._id} {...apron} />;
+                        }
+                    })
+                    
+                  }
             </div>
         );
     }
 }
 
+function mapStateToProps(state) {
+    const { aprons } = state.products;
+    return {
+        aprons
+    }
+}
+  
+ShoppingCart = connect(mapStateToProps)(ShoppingCart);
+
+export default ShoppingCart;

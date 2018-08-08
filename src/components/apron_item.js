@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
+// import store from "./store/bootstrap"
 
-export default class ApronItem extends Component {
+import * as actions from '../actions';
+
+class ApronItem extends Component {
     constructor(props) {
         super(props) 
 
         this.state = {
-            active: false
+            // getState()
         }
 
         this.changeActive = this.changeActive.bind(this);
     }
 
     changeActive() {
-        this.setState({
-          active: !this.state.active,
-        });
+        // this.setState({
+        //   active: !this.state.active,
+        // });
+        this.props.setItemActive(this.props._id);
     }
 
     render() {
@@ -35,3 +40,6 @@ export default class ApronItem extends Component {
     }
 }
 
+ApronItem = connect(null, actions)(ApronItem);
+
+export default ApronItem;

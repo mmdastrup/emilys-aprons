@@ -2,113 +2,41 @@ import React, { Component } from "react";
 import Navbar from "./navbar";
 import ApronItem from "./apron_item";
 
+import * as actions from '../actions';
+import { connect } from 'react-redux';
 
 class Browse extends Component {
-  render() {
-    this.aprons = [
-      {
-        _id: 0,
-        title: "black apron",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "infant"
-      },
-      {
-        _id: 1,
-        title: "black apron",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "infant"
-      },
-      {
-        _id: 2,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "infant"
-      },
-      {
-        _id: 3,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "toddler"
-      },
-      {
-        _id: 4,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "toddler"
-      },
-      {
-        _id: 5,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "toddler"
-      },
-      {
-        _id: 6,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "child"
-      },
-      {
-        _id: 7,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "child"
-      },
-      {
-        _id: 8,
-        title: "black",
-        pic:
-          "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
-        description: "Description goes here",
-        price: "$$",
-        active: false,
-        apron_type: "child"
-      },
 
-    ];
+  componentDidMount() {
+    this.props.fetchAprons();
+  }
+
+  render() {
+  
     return (
       <div>
         <Navbar />
         <div className="apron_list">
-          {this.aprons.map(apron => {
-            return <ApronItem key={apron._id} {...apron} />;
-          })}
+          {
+ 
+            this.props.aprons.map(apron => {
+              return <ApronItem key={apron._id} {...apron} />;
+            })
+            
+          }
         </div>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  const { aprons } = state.products;
+  return {
+    aprons
+  }
+}
+
+Browse = connect(mapStateToProps, actions)(Browse);
 
 export default Browse;
