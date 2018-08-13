@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-// import store from "./store/bootstrap"
 
 import * as actions from '../actions';
 
@@ -16,9 +15,6 @@ class ApronItem extends Component {
     }
 
     changeActive() {
-        // this.setState({
-        //   active: !this.state.active,
-        // });
         this.props.setItemActive(this.props._id);
     }
 
@@ -30,7 +26,7 @@ class ApronItem extends Component {
                 <h1 className="apron_title">{this.props.title}</h1>
                 <p className="apron_description">{this.props.description}</p>
                 <h4 className="apron_price">{this.props.price}</h4>
-                { this.state.active ? <button onClick={this.changeActive}>In Cart</button>: <button onClick={this.changeActive}>Add to Cart</button>}
+                { this.props.active ? <button className="selected-button" onClick={this.changeActive}>Remove From Cart</button>: <button className="button" onClick={this.changeActive}>Add to Cart</button>}
                 {console.log(this.state.active)}
 
             </div>
