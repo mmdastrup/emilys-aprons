@@ -7,6 +7,8 @@ body {
 }
 .navbar {
     background: $color-dark-purple;
+    font-family: $font-writing;
+
 }
 .navbar div {
     display: none;
@@ -38,6 +40,7 @@ body {
     text-align: center;
     padding: 0.6em;
     color: white;
+    font-family: $font-writing;
 }
 .navbar a {
     text-decoration: none;

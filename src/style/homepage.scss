@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+    height: 70vw;
+    background-color: white;
+    border: 5px solid black;
+    z-index: 5;
+    padding-top: 15px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6vw;
+    padding-top: 6vw;
+    background-image: url("https://thumbs.dreamstime.com/b/chevron-zigzag-black-white-seamless-pattern-vector-geometric-monochrome-striped-background-zig-zag-wave-68372291.jpg");
+    z-index: -5;
+}
+
+.heading {
+    padding: 20px;
+}
+
+.subheading {
+    padding: 15px;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.bigpic {
+    border: 25px solid black;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sidepicture {
+    padding-top: 175px;
+}

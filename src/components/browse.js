@@ -16,6 +16,9 @@ class Browse extends Component {
     return (
       <div>
         <Navbar />
+        <div className="browse-heading">
+          <h1>Browse All</h1>
+        </div>
         <div className="apron_list">
           {
  

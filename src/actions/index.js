@@ -20,7 +20,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 25.95,
           active: false,
           apron_type: "infant"
         },
@@ -30,7 +30,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 22.95,
           active: false,
           apron_type: "infant"
         },
@@ -40,7 +40,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 24.95,
           active: false,
           apron_type: "infant"
         },
@@ -50,7 +50,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "description goes here",
-          price: "$$",
+          price: 18.95,
           active: false,
           apron_type: "toddler"
         },
@@ -60,7 +60,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 24.95,
           active: false,
           apron_type: "toddler"
         },
@@ -70,7 +70,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 14.95,
           active: false,
           apron_type: "toddler"
         },
@@ -80,7 +80,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 21.95,
           active: false,
           apron_type: "child"
         },
@@ -90,7 +90,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 32.95,
           active: false,
           apron_type: "child"
         },
@@ -100,7 +100,7 @@ export function fetchAprons() {
           pic:
             "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/787_XXX_v1.tif&wid=650&cvt=jpeg",
           description: "Description goes here",
-          price: "$$",
+          price: 24.95,
           active: false,
           apron_type: "child"
         },
