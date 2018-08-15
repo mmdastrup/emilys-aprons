@@ -20,9 +20,10 @@ class ShoppingCart extends Component {
                         if(apron.active) {
                             return <ApronItem key={apron._id} {...apron} />;
                         }
-                    })
-                    
-                  }
+                    })  
+                }
+                {console.log("Apron price here")}
+                
             </div>
         );
     }

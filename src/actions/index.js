@@ -6,7 +6,14 @@ import {
 export function setItemActive(_id) {
   return ({
     type: SET_ITEM_ACTIVE,
-    payload: _id
+    payload: _id,
+  })
+}
+
+export function itemPrice(price) {
+  return ({
+    type: SET_ITEM_PRICE,
+    payload: price
   })
 }
 

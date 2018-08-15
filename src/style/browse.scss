@@ -1,16 +1,20 @@
 .apron_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid black;
+    z-index: 5;
+    padding-top: 15px;
+    background-color: white;
 }
 
 .apron_items {
     display: grid;
     justify-self: center;
     padding: 20px;
-    border: 1px solid black;
     max-width: 400px;
     min-width: 180px;
-    margin: 20px;
+    margin: 35px;
+    border: 2px solid black;
 }
 
 .apron_items:hover {
@@ -27,9 +31,6 @@
     }
 }
 
-.selected-button {
-
-}
 
 .apron_pic {
     max-width: 350px;
@@ -43,8 +44,17 @@
 
 .browse-heading {
     text-align: center;
+    margin-bottom: 35px;
     padding: 25px;
+    background-color: white;
+    border: 4px solid black;
 }
 
 
 
+.body {
+    padding-bottom: 6vw;
+    padding-top: 6vw;
+    background-image: url("https://thumbs.dreamstime.com/b/chevron-zigzag-black-white-seamless-pattern-vector-geometric-monochrome-striped-background-zig-zag-wave-68372291.jpg");
+    z-index: -5;
+}

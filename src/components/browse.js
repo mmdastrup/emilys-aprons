@@ -16,18 +16,20 @@ class Browse extends Component {
     return (
       <div>
         <Navbar />
-        <div className="browse-heading">
-          <h1>Browse All</h1>
-        </div>
-        <div className="apron_list">
-          {
- 
-            this.props.aprons.map(apron => {
-              return <ApronItem key={apron._id} {...apron} />;
-            })
-            
-          }
-        </div>
+        <div className="body">
+            <div className="browse-heading">
+              <h1>Browse All</h1>
+            </div>
+            <div className="apron_list">
+              {
+    
+                this.props.aprons.map(apron => {
+                  return <ApronItem key={apron._id} {...apron} />;
+                })
+                
+              }
+            </div>
+          </div>
       </div>
     );
   }

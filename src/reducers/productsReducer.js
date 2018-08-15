@@ -1,4 +1,4 @@
-import { SET_APRONS, SET_ITEM_ACTIVE } from '../actions/types';
+import { SET_APRONS, SET_ITEM_ACTIVE, SET_ITEM_PRICE } from '../actions/types';
 
 const INITIAL_STATE = {
     aprons: []
@@ -33,3 +33,4 @@ export default function(state = INITIAL_STATE, action) {
         default: return state;
     }
 }
+
