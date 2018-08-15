@@ -29,7 +29,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 25.95,
           active: false,
-          apron_type: "infant"
+          type: "child"
         },
         {
           _id: 1,
@@ -39,7 +39,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 22.95,
           active: false,
-          apron_type: "infant"
+          type: "toddler"
         },
         {
           _id: 2,
@@ -49,7 +49,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 24.95,
           active: false,
-          apron_type: "infant"
+          type: "infant"
         },
         {
           _id: 3,
@@ -59,7 +59,7 @@ export function fetchAprons() {
           description: "description goes here",
           price: 18.95,
           active: false,
-          apron_type: "toddler"
+          type: "child"
         },
         {
           _id: 4,
@@ -69,7 +69,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 24.95,
           active: false,
-          apron_type: "toddler"
+          type: "infant"
         },
         {
           _id: 5,
@@ -79,7 +79,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 14.95,
           active: false,
-          apron_type: "toddler"
+          type: "toddler"
         },
         {
           _id: 6,
@@ -89,7 +89,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 21.95,
           active: false,
-          apron_type: "child"
+          type: "toddler"
         },
         {
           _id: 7,
@@ -99,7 +99,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 32.95,
           active: false,
-          apron_type: "child"
+          type: "child"
         },
         {
           _id: 8,
@@ -109,7 +109,7 @@ export function fetchAprons() {
           description: "Description goes here",
           price: 24.95,
           active: false,
-          apron_type: "child"
+          type: "toddler"
         },
       ] 
     })

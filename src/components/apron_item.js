@@ -25,6 +25,7 @@ class ApronItem extends Component {
                 <img src={this.props.pic} className="apron_pic"/>
                 <h1 className="apron_title">{this.props.title}</h1>
                 <p className="apron_description">{this.props.description}</p>
+                <p className="apron_type">{this.props.type}</p>
                 <h4 className="apron_price">{this.props.price}</h4>
                 { this.props.active ? <button className="selected-button" onClick={this.changeActive}>Remove From Cart</button>: <button className="button" onClick={this.changeActive}>Add to Cart</button>}
                 {console.log(this.state.active)}

@@ -1,0 +1,30 @@
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/chevron-zigzag-black-white-seamless-pattern-vector-geometric-monochrome-striped-background-zig-zag-wave-68372291.jpg");
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    border: 4px solid black;
+    margin: 100px;
+    max-height: 275px;
+    background-color: white;
+}
+
+.shopping_pic {
+    max-width: 350px;
+    min-width: 150px;
+    padding: 15px;
+}
+
+.shopping-header {
+    text-align: center;
+    background-color: white;
+}
+
+#x {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    font-size: 25px;
+}

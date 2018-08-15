@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './navbar';
 
-import ApronItem from './apron_item';
+import ShoppingItem from './shoppingCart_item';
 
 import { connect } from 'react-redux';
 
@@ -14,11 +14,14 @@ class ShoppingCart extends Component {
         return (
             <div className="shoppingCart-wrapper">
                 <Navbar/>
+                <div className="shopping-header">
+                    <h1>Here are the items in your cart</h1>
+                </div>
                 {
  
                     this.props.aprons.map(apron => {
                         if(apron.active) {
-                            return <ApronItem key={apron._id} {...apron} />;
+                            return <ShoppingItem key={apron._id} {...apron} />;
                         }
                     })  
                 }
