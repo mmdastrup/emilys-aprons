@@ -3,13 +3,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     border: 5px solid black;
     z-index: 5;
-    padding-top: 15px;
+    padding: 35px;
     background-color: white;
 }
 
 .apron_items {
     display: grid;
-    justify-self: center;
     padding: 20px;
     max-width: 400px;
     min-width: 180px;

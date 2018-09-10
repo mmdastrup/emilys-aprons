@@ -1,0 +1,32 @@
+.info {
+    display: flex;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 15vh;
+}
+.information {
+    background-color: white;
+    border: 4px solid black;
+    width: 50vw;
+    padding: 15px;   
+}
+.about-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+    color: #868b93;
+}
+
+.insta {
+    padding: 4px;
+}
+.facebook {
+    padding: 4px;
+}
+.snap {
+    padding: 4px;
+}
+.twitter {
+    padding: 4px;
+}
